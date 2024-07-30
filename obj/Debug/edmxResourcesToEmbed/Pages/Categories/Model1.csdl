@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="bdVenteModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Categorie">
+    <Key>
+      <PropertyRef Name="idCategorie" />
+    </Key>
+    <Property Name="idCategorie" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CodeCategorie" Type="String" MaxLength="6" FixedLength="false" Unicode="true" />
+    <Property Name="LibelleCategorie" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="bdVenteEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Categorie" EntityType="Self.Categorie" />
+  </EntityContainer>
+</Schema>

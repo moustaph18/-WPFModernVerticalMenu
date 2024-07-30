@@ -1,0 +1,18 @@
+﻿<Window x:Class="WPFModernVerticalMenu.Pages.Categories.ModifierCategorie"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFModernVerticalMenu.Pages.Categories"
+        mc:Ignorable="d"
+        Title="ModifierCategorie" Height="360" Width="334">
+    <Grid>
+        <TextBox x:Name="CodeCategorie" HorizontalAlignment="Left" Margin="24,103,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="269" FontSize="20"/>
+        <Label Content="Code " HorizontalAlignment="Left" Margin="12,63,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <TextBox x:Name="libelleCategorie" HorizontalAlignment="Left" Margin="26,201,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="269" FontSize="20"/>
+        <Label Content="Libelle" HorizontalAlignment="Left" Margin="12,146,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Button x:Name="btnModifierCategorie" Content="Modifier" HorizontalAlignment="Left" Margin="209,275,0,0" VerticalAlignment="Top" FontSize="20" Width="83" Click="btnModifier"  Background="Goldenrod" Foreground="White"  BorderBrush="Goldenrod"/>
+        <Label Content="Categorie" HorizontalAlignment="Left" Margin="123,24,0,0" VerticalAlignment="Top" FontSize="18"/>
+
+    </Grid>
+</Window>

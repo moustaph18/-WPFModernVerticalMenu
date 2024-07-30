@@ -1,0 +1,23 @@
+﻿<Window x:Name="Ajout_Categorie" x:Class="WPFModernVerticalMenu.Pages.Categories.AjoutCategorie"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WPFModernVerticalMenu.Pages.Categories"
+      mc:Ignorable="d"
+      Title="AjoutCategorie" Width="391" Height="310">
+
+    <Grid Margin="0,4,0,-4">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="72*"/>
+            <ColumnDefinition Width="319*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="CodeCategorie" HorizontalAlignment="Left" Margin="28,82,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="269" FontSize="20" Grid.ColumnSpan="2"/>
+        <Label Content="Code " HorizontalAlignment="Center" Margin="0,44,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <TextBox x:Name="libelleCategorie" HorizontalAlignment="Left" Margin="28,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="269" FontSize="20" Grid.ColumnSpan="2"/>
+        <Label Content="Libelle" HorizontalAlignment="Left" Margin="8,119,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Button x:Name="AjouterCategorie" Content="Ajouter" HorizontalAlignment="Left" Margin="207,229,0,0" VerticalAlignment="Top" FontSize="20" Width="83" RenderTransformOrigin="-3.82,-35.733" Grid.Column="1" Click="btn_AjouterCategorie"  Background="Green" Foreground="White"  BorderBrush="Green" />
+        <Label Content="Categorie" HorizontalAlignment="Left" Margin="80,19,0,0" VerticalAlignment="Top" FontSize="18" Grid.Column="1"/>
+
+    </Grid>
+</Window>
